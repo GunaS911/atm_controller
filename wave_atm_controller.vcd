@@ -1,0 +1,376 @@
+$date
+	Sun Jun 14 23:48:44 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_atm_controller $end
+$var wire 4 ! state_dbg [3:0] $end
+$var wire 1 " receipt_print $end
+$var wire 1 # error $end
+$var wire 1 $ cash_dispense $end
+$var wire 1 % card_retain $end
+$var wire 1 & card_eject $end
+$var reg 1 ' amount_valid $end
+$var reg 1 ( cancel $end
+$var reg 1 ) card_inserted $end
+$var reg 1 * cash_available $end
+$var reg 1 + cash_taken $end
+$var reg 1 , clk $end
+$var reg 1 - pin_invalid $end
+$var reg 1 . pin_valid $end
+$var reg 1 / rst $end
+$var reg 1 0 txn_select $end
+$scope module uut $end
+$var wire 1 ' amount_valid $end
+$var wire 1 ( cancel $end
+$var wire 1 ) card_inserted $end
+$var wire 1 * cash_available $end
+$var wire 1 + cash_taken $end
+$var wire 1 , clk $end
+$var wire 1 - pin_invalid $end
+$var wire 1 . pin_valid $end
+$var wire 1 / rst $end
+$var wire 4 1 state_dbg [3:0] $end
+$var wire 1 0 txn_select $end
+$var parameter 32 2 MAX_PIN_ATTEMPTS $end
+$var parameter 4 3 S_AMOUNT $end
+$var parameter 4 4 S_CARD_IN $end
+$var parameter 4 5 S_DISPENSE $end
+$var parameter 4 6 S_EJECT $end
+$var parameter 4 7 S_ERROR $end
+$var parameter 4 8 S_IDLE $end
+$var parameter 4 9 S_MENU $end
+$var parameter 4 : S_PIN_CHECK $end
+$var parameter 4 ; S_RECEIPT $end
+$var parameter 4 < S_RETAIN_CARD $end
+$var reg 1 & card_eject $end
+$var reg 1 % card_retain $end
+$var reg 1 $ cash_dispense $end
+$var reg 1 # error $end
+$var reg 4 = next_state [3:0] $end
+$var reg 2 > pin_attempts [1:0] $end
+$var reg 1 ? pin_retry_error $end
+$var reg 1 " receipt_print $end
+$var reg 4 @ state [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1001 <
+b110 ;
+b10 :
+b11 9
+b0 8
+b1000 7
+b111 6
+b101 5
+b1 4
+b100 3
+b11 2
+$end
+#0
+$dumpvars
+bx @
+x?
+bx >
+b0 =
+bx 1
+00
+1/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+bx !
+$end
+#5
+0?
+b0 >
+b0 !
+b0 1
+b0 @
+1,
+#10
+b1 =
+0,
+1)
+0/
+#15
+b10 =
+b1 !
+b1 1
+b1 @
+1,
+#20
+b10 =
+0,
+1.
+0)
+#25
+b11 =
+b10 !
+b10 1
+b10 @
+1,
+#30
+b10 =
+0,
+10
+0.
+#35
+1,
+#40
+0,
+1*
+1'
+00
+#45
+1,
+#50
+0,
+0*
+0'
+#55
+1,
+#60
+0,
+1+
+#65
+1,
+#70
+0,
+0+
+#75
+1,
+#80
+0,
+#85
+1,
+#90
+0,
+1)
+#95
+1,
+#100
+b1000 =
+0,
+1-
+0)
+#105
+b10 =
+1#
+1?
+b1 >
+b1000 !
+b1000 1
+b1000 @
+1,
+#110
+1#
+b10 =
+0,
+0-
+#115
+0#
+b10 !
+b10 1
+b10 @
+1,
+#120
+0,
+#125
+1,
+#130
+b1000 =
+0,
+1-
+#135
+b10 =
+1#
+b10 >
+b1000 !
+b1000 1
+b1000 @
+1,
+#140
+1#
+b10 =
+0,
+0-
+#145
+0#
+b10 !
+b10 1
+b10 @
+1,
+#150
+0,
+#155
+1,
+#160
+b1001 =
+0,
+1-
+#165
+b0 =
+1%
+b11 >
+b1001 !
+b1001 1
+b1001 @
+1,
+#170
+1%
+b0 =
+0,
+0-
+#175
+0%
+b0 !
+b0 1
+b0 @
+1,
+#180
+0,
+#185
+0?
+b0 >
+1,
+#190
+0,
+1/
+#195
+1,
+#200
+b1 =
+0,
+1)
+0/
+#205
+b10 =
+b1 !
+b1 1
+b1 @
+1,
+#210
+b10 =
+0,
+1.
+0)
+#215
+b11 =
+b10 !
+b10 1
+b10 @
+1,
+#220
+b10 =
+0,
+10
+0.
+#225
+1,
+#230
+0,
+1'
+00
+#235
+1,
+#240
+0,
+0'
+#245
+1,
+#250
+0,
+#255
+1,
+#260
+0,
+#265
+1,
+#270
+0,
+1/
+#275
+b0 =
+b0 !
+b0 1
+b0 @
+1,
+#280
+b1 =
+0,
+1)
+0/
+#285
+b10 =
+b1 !
+b1 1
+b1 @
+1,
+#290
+b10 =
+0,
+1.
+0)
+#295
+b11 =
+b10 !
+b10 1
+b10 @
+1,
+#300
+b10 =
+0,
+10
+0.
+#305
+1,
+#310
+b111 =
+0,
+1(
+00
+#315
+b0 =
+1&
+b111 !
+b111 1
+b111 @
+1,
+#320
+1&
+b0 =
+0,
+0(
+#325
+0&
+b0 !
+b0 1
+b0 @
+1,
+#330
+0,
+#335
+1,
+#340
+0,
+#345
+1,
+#350
+0,
